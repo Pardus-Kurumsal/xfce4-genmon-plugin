@@ -1,0 +1,149 @@
+xfce4-genmon-plugin (3.4.0-2) unstable; urgency=low
+
+  * debian/rules:
+    - enable all hardening flags.
+  * debian/control:
+    - drop build-dep on dpkg-dev, version is recent enough in stable to have
+      hardening support.
+    - drop bersion on xfce4-panel build-dep, stable already has 4.8.
+    - drop Emmanuele and Simon from uploaders, thanks to them!
+
+ -- Yves-Alexis Perez <corsac@debian.org>  Fri, 24 May 2013 08:04:23 +0200
+
+xfce4-genmon-plugin (3.4.0-1) unstable; urgency=low
+
+  * New upstream release.
+  * debian/control:
+    - replace libxfcegui4 build-dep by libxfce4ui.
+    - update debhelper build-dep to 9.
+    - update standards version to 3.9.3.
+  * debian/rules:
+    - pass --disable-static to configure and stop removing .la files.
+    - use multiarch paths.
+
+ -- Yves-Alexis Perez <corsac@debian.org>  Sun, 13 May 2012 13:13:21 +0200
+
+xfce4-genmon-plugin (3.3.1-1) unstable; urgency=low
+
+  * New upstream release.
+    - fix plugin not refreshing before going to properties.     closes: #623697
+  * debian/rules:
+    - use hardening rules from dh9 and dpkg-dev 1.16.1.
+  * debian/compat bumped to 9
+  * debian/control:
+    - update debhelper build-dep for hardening support.
+    - add dpkg-dev 1.16.1 build-dep for hardening support.
+
+ -- Yves-Alexis Perez <corsac@debian.org>  Mon, 02 Jan 2012 22:03:26 +0100
+
+xfce4-genmon-plugin (3.3.0-1) unstable; urgency=low
+
+  [ Evgeni Golov ]
+  * Fix Vcs-* fields, they were missing 'trunk' in the path.
+
+  [ Yves-Alexis Perez ]
+  * New upstream release.
+  * debian/watch edited to track Xfce archive reorganisation.
+  * debian/control:
+    - switch to xfce section.
+    - add build-dep on libxfcegui4-dev. 
+    - update standards version to 3.9.2.
+    - add ${misc:Depends} to dependencies.
+    - update debhelper build-dep for overrides support.
+    - drop cdbs build-dep.
+    - add build-dep on hardening-includes.
+    - update Xfce build-deps to 4.8.
+  * debian/patches:
+    - 01_no-zombies dropped, included upstream.
+    - 02_close-unused-pipes as well.
+  * debian/rules:
+    - drop simple-patchsys include.
+    - pick build flags from dpkg-buildflags.
+    - add -z,defs, --as-needed and -O1 to LDFLAGS.
+    - add hardening flags to build flags.
+    - switch to debhelper 7 tiny.rules with overrides.
+  * Switch to 3.0 (quilt) source format
+  * debian/compat bumped to 7.
+
+  [ Lionel Le Folgoc ]
+  * debian/control: add myself to Uploaders.
+
+ -- Yves-Alexis Perez <corsac@debian.org>  Tue, 19 Apr 2011 23:01:02 +0200
+
+xfce4-genmon-plugin (3.2-3) unstable; urgency=low
+
+  * debian/patches: 02_close-unused-pipes added, don't hang on non-finishing
+    processes. (Xfce #4036).
+  * debian/control:
+    - update standards version to 3.8.0.
+    - remove Rudy Godoy, Martin Loschwitz from Uploaders.
+
+ -- Yves-Alexis Perez <corsac@debian.org>  Wed, 18 Jun 2008 09:22:06 +0200
+
+xfce4-genmon-plugin (3.2-2) unstable; urgency=low
+
+  * debian/patches:
+    - 01_no-zombies added: no zombies left by spawned process.  closes: #422572
+
+ -- Yves-Alexis Perez <corsac@debian.org>  Wed, 16 Apr 2008 22:10:44 +0200
+
+xfce4-genmon-plugin (3.2-1) unstable; urgency=low
+
+  [ Simon Huggins ]
+  * debian/control: Move fake Homepage field to a real one now dpkg
+    supports it.
+  * Add Vcs-* headers to debian/control
+
+  [ Yves-Alexis Perez ]
+  * New upstream release.
+    - now supports ~ in command lines.                          closes: #435109
+  * debian/control:
+    - updated standards version to 3.7.3.
+    - updated my email address.
+    - removed Jani Monoses from Uploaders:.
+    - updated Homepage: field.
+  * debian/copyright:
+    - updated download address.
+    - updated copyright holders
+
+ -- Yves-Alexis Perez <corsac@debian.org>  Sun, 16 Mar 2008 00:41:20 +0100
+
+xfce4-genmon-plugin (3.1-1) unstable; urgency=low
+
+  (Yves-Alexis Perez)
+  * New upstream release.
+  * debian/patches: remove patch to fix implicit pointer conversion, merged
+    upstream.
+  (Simon Huggins)
+  * Build against latest panel.
+
+ -- Yves-Alexis Perez <corsac@corsac.net>  Sun, 29 Apr 2007 14:57:21 +0100
+
+xfce4-genmon-plugin (3.0-2) unstable; urgency=low
+
+  (Yves-Alexis Perez)
+  * added a patch to fix implicit pointer conversion.		closes: #402839 
+  (Stefan Ott)
+  * debian/control: goodies website URL updated.
+
+ -- Yves-Alexis Perez <corsac@corsac.net>  Fri, 05 Jan 2007 16:43:35 +0100
+
+xfce4-genmon-plugin (3.0-1) unstable; urgency=low
+
+  * New upstream release.
+  * Incremented build-dep to 4.3.99.2 (Xfce 4.4rc2).
+
+ -- Yves-Alexis Perez <corsac@corsac.net>  Thu, 16 Nov 2006 18:31:29 +0100
+
+xfce4-genmon-plugin (2.0-2) unstable; urgency=low
+
+  * Incremented build-deps to 4.3.90.2 (Xfce 4.4 Beta2).
+
+ -- Yves-Alexis Perez <corsac@corsac.net>  Wed, 26 Jul 2006 17:48:57 +0100
+
+xfce4-genmon-plugin (2.0-1) unstable; urgency=low
+
+  * Initial Release.                                           closes: #309860
+
+ -- Yves-Alexis Perez <corsac@corsac.net>  Sun, 30 Apr 2006 16:46:30 +0200
+

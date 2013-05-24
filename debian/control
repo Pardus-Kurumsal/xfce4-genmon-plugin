@@ -1,0 +1,20 @@
+Source: xfce4-genmon-plugin
+Section: xfce
+Priority: optional
+Maintainer: Debian Xfce Maintainers <pkg-xfce-devel@lists.alioth.debian.org>
+Uploaders: Yves-Alexis Perez <corsac@debian.org>, 
+ Lionel Le Folgoc <mrpouit@gmail.com>
+Build-Depends: debhelper (>= 9), autotools-dev, xfce4-panel-dev,
+ libxml-parser-perl, libxfce4ui-1-dev, intltool
+Standards-Version: 3.9.3
+Homepage: http://goodies.xfce.org/projects/panel-plugins/xfce4-genmon-plugin
+Vcs-Svn: svn://svn.debian.org/pkg-xfce/goodies/trunk/xfce4-genmon-plugin/
+Vcs-Browser: http://svn.debian.org/wsvn/pkg-xfce/goodies/trunk/xfce4-genmon-plugin/
+
+Package: xfce4-genmon-plugin
+Architecture: any
+Depends: ${shlibs:Depends}, ${misc:Depends}
+Description: Generic Monitor for the Xfce4 panel
+ This plugin repeatedly spawns the indicated script/program, displaying
+ its output as a string in the panel. It is useful for periodic status
+ monitoring.
