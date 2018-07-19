@@ -1,0 +1,165 @@
+From: =?utf-8?q?Yunusemre_=C5=9Eent=C3=BCrk?=
+ <yunusemre.senturk@pardus.org.tr>
+Date: Thu, 19 Jul 2018 11:08:57 +0300
+Subject: Update Turkish translation
+MIME-Version: 1.0
+Content-Type: text/plain; charset="utf-8"
+Content-Transfer-Encoding: 8bit
+
+Signed-off-by: Yunusemre Şentürk <yunusemre.senturk@pardus.org.tr>
+---
+ po/tr.po | 81 +++++++++++++++++++++++++++++++++++-----------------------------
+ 1 file changed, 44 insertions(+), 37 deletions(-)
+
+diff --git a/po/tr.po b/po/tr.po
+index 094637b..cb8194a 100644
+--- a/po/tr.po
++++ b/po/tr.po
+@@ -1,103 +1,110 @@
+-# 
++#
++# Yunusemre Şentürk <yunusemre.senturk@pardus.org.tr>, 2018.
++#
+ msgid ""
+ msgstr ""
+ "Project-Id-Version: xfce4 genmon plugin\n"
+ "Report-Msgid-Bugs-To: \n"
+-"POT-Creation-Date: 2011-07-15 10:07+0000\n"
+-"PO-Revision-Date: \n"
+-"Last-Translator: Samed Beyribey <ras0ir@eventualis.org>\n"
+-"Language-Team: Xfce-TR <xfce-tr@googlegroups.com>\n"
++"POT-Creation-Date: 2018-07-19 11:06+0300\n"
++"PO-Revision-Date: 2018-07-19 11:08+0300\n"
++"Last-Translator: Yunusemre Şentürk <yunusemre.senturk@pardus.org.tr>\n"
++"Language-Team: Türkçe <>\n"
++"Language: \n"
+ "MIME-Version: 1.0\n"
+ "Content-Type: text/plain; charset=UTF-8\n"
+ "Content-Transfer-Encoding: 8bit\n"
+ "X-Poedit-Country: TURKEY\n"
++"Plural-Forms: nplurals=2; plural=(n != 1);\n"
++"X-Generator: Gtranslator 2.91.7\n"
+ 
+-#: ../panel-plugin/cmdspawn.c:174
++#: ../panel-plugin/cmdspawn.c:166
+ #, c-format
+ msgid "Error in command \"%s\""
+ msgstr "\"%s \" komutunda hata"
+ 
+-#: ../panel-plugin/cmdspawn.c:177 ../panel-plugin/main.c:105
++#: ../panel-plugin/cmdspawn.c:168 ../panel-plugin/main.c:94
+ msgid "Xfce Panel"
+ msgstr "Xfce Panel"
+ 
+-#: ../panel-plugin/config_gui.c:87
+-msgid "About..."
+-msgstr "Hakkında..."
+-
+-#: ../panel-plugin/config_gui.c:103 ../panel-plugin/main.c:677
+-#: ../panel-plugin/genmon.desktop.in.in.h:1
+-msgid "Generic Monitor"
+-msgstr "Genel İzleyici"
+-
+-#: ../panel-plugin/config_gui.c:116
++#: ../panel-plugin/config_gui.c:81
+ msgid "Command"
+ msgstr "Komut"
+ 
+-#: ../panel-plugin/config_gui.c:130
++#: ../panel-plugin/config_gui.c:95
+ msgid "Input the shell command to spawn, then press <Enter>"
+ msgstr "Komutu girdikten sonra <Enter> tuşuna basınız"
+ 
+-#: ../panel-plugin/config_gui.c:149
++#: ../panel-plugin/config_gui.c:114
+ msgid "Interval between 2 consecutive spawns"
+ msgstr "Ardışık çalıştırılacak 2 komut arasındaki zaman aralığı"
+ 
+-#: ../panel-plugin/config_gui.c:153
++#: ../panel-plugin/config_gui.c:118
+ msgid "Period (s) "
+ msgstr "Periyot"
+ 
+-#: ../panel-plugin/config_gui.c:161
++#: ../panel-plugin/config_gui.c:126
+ msgid "Label"
+ msgstr "Etiket"
+ 
+-#: ../panel-plugin/config_gui.c:166
++#: ../panel-plugin/config_gui.c:131
+ msgid "Tick to display label"
+ msgstr "Etiketi görüntülemek için işaretleyin"
+ 
+-#: ../panel-plugin/config_gui.c:175
++#: ../panel-plugin/config_gui.c:140
+ msgid "Input the plugin label, then press <Enter>"
+ msgstr "Eklenti etiketini girdikten sonra, <Enter> tuşuna basınız"
+ 
+-#: ../panel-plugin/config_gui.c:178
++#: ../panel-plugin/config_gui.c:143
+ msgid "(genmon)"
+ msgstr "(genmon)"
+ 
+-#: ../panel-plugin/config_gui.c:187
++#: ../panel-plugin/config_gui.c:152
+ msgid "Press to change font"
+ msgstr "Yazı tipini değiştirmek için basınız"
+ 
+-#: ../panel-plugin/config_gui.c:202
++#: ../panel-plugin/config_gui.c:167
+ msgid "(Default font)"
+ msgstr "(Öntanımlı yazı tipi)"
+ 
+-#: ../panel-plugin/main.c:104
++#: ../panel-plugin/main.c:93
+ #, c-format
+ msgid "Could not run \"%s\""
+ msgstr "\"%s\" çalıştırılamadı"
+ 
+-#: ../panel-plugin/main.c:602
+-#, c-format
++#: ../panel-plugin/main.c:574
+ msgid ""
+-"%s %s - Generic Monitor\n"
+-"Cyclically spawns a script/program, captures its output and displays the resulting string in the panel\n"
++"Cyclically spawns a script/program, captures its output and displays the "
++"resulting string in the panel\n"
+ "\n"
+ "(c) 2004 Roger Seguin <roger_seguin@msn.com>\n"
+ "(c) 2006 Julien Devemy <jujucece@gmail.com>"
+ msgstr ""
+-"%s %s - Genel İzleyici\n"
+-"Periyodik olarak bir betik ya da uygulamayı çalıştırıp, onların çıktısını ve sonuçlarını panelde gösterir\n"
++"Periyodik olarak bir betik ya da uygulamayı çalıştırıp, onların çıktısını ve "
++"sonuçlarını panelde gösterir\n"
+ "\n"
+ "(c) 2004 Roger Seguin <roger_seguin@msn.com>\n"
+ "(c) 2006 Julien Devemy <jujucece@gmail.com>"
+ 
+-#: ../panel-plugin/main.c:620
++#: ../panel-plugin/main.c:578
++#, c-format
++msgid "%s %s - Generic Monitor"
++msgstr "%s %s - Genel İzleyici"
++
++#: ../panel-plugin/main.c:592
+ msgid "Font Selection"
+ msgstr "Yazıtipi Seçimi"
+ 
+-#: ../panel-plugin/main.c:665
++#: ../panel-plugin/main.c:637
+ msgid "Configuration"
+ msgstr "Yapılandırma"
+ 
+-#: ../panel-plugin/genmon.desktop.in.in.h:2
+-msgid "Show output of a command. "
++#: ../panel-plugin/main.c:647 ../panel-plugin/genmon.desktop.in.h:1
++msgid "Generic Monitor"
++msgstr "Genel İzleyici"
++
++#: ../panel-plugin/genmon.desktop.in.h:2
++msgid "Show output of a command."
+ msgstr "Bir komutun çıktısını göster."
++
++#~ msgid "About..."
++#~ msgstr "Hakkında..."
