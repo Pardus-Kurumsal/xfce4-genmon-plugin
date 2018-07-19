@@ -1,3 +1,10 @@
+xfce4-genmon-plugin (3.4.0-2pardus1) unstable; urgency=medium
+
+  * Pardus CI implementation
+  * Add patches
+
+ -- Yunusemre Şentürk <yunusemre.senturk@pardus.org.tr>  Thu, 19 Jul 2018 11:09:16 +0300
+
 xfce4-genmon-plugin (3.4.0-2) unstable; urgency=low
 
   * debian/rules:
